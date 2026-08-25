@@ -1,0 +1,112 @@
+# Fire Protection CMS - .gitignore
+# Ignore sensitive and unnecessary files
+
+# Configuration files
+config/database.php
+config/security.php
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+vendor/
+node_modules/
+composer.lock
+package-lock.json
+
+# Logs
+logs/
+*.log
+
+# Uploads and temporary files
+uploads/
+tmp/
+temp/
+cache/
+.cache/
+
+# System files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Editor directories and files
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+desktop.ini
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.tmp
+*~
+
+# Database backups
+*.sql
+*.sql.gz
+!database/fire_protection_db.sql
+
+# Testing
+.phpunit.result.cache
+coverage/
+.coverage
+
+# Build artifacts
+dist/
+build/
+.next/
+out/
+
+# Package managers
+.package-lock.json
+yarn.lock
+
+# Private keys and certificates
+*.pem
+*.key
+*.crt
+
+# Email and sensitive data
+.mailmap
+
+# Development
+.env.development
+.env.test
+.env.production
+
+# macOS
+.AppleDouble
+.LSOverride
+
+# Windows
+Desktop.ini
+$RECYCLE.BIN/

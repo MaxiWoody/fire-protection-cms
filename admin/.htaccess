@@ -1,0 +1,32 @@
+<?php
+/**
+ * .htaccess Admin Panel Koruma
+ * admin/.htaccess dosyasına kopyalayın
+ */
+?>
+
+# Admin Panel Security
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /admin/
+    
+    # Require login for admin pages
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(?!login\.php)(.*)$ login.php [L]
+end
+
+# Restrict directory listing
+<IfModule mod_autoindex.c>
+    Options -Indexes
+end
+
+# Protect PHP files
+<FilesMatch "\.php$">
+    Require all denied
+end
+
+# Only allow specific files
+<FilesMatch "(login|logout|dashboard|pages|services|messages|seo|settings|users)\.php$">
+    Require all granted
+end
