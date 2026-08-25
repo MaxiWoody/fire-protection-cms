@@ -1,0 +1,39 @@
+fire-protection-cms/
+├── admin/                    # Admin panel dosyaları
+│   ├── login.php
+│   ├── dashboard.php
+│   ├── pages.php
+│   ├── services.php
+│   ├── messages.php
+│   ├── seo.php
+│   ├── settings.php
+│   └── logout.php
+├── api/                      # API dosyaları
+│   └── ajax-handler.php
+├── assets/                   # Statik dosyalar
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   ├── main.js
+│   │   └── ajax-handler.js
+│   └── images/
+├── config/                   # Konfigürasyon dosyaları
+│   ├── database.php
+│   ├── security.php
+│   └── constants.php
+├── database/                 # Veritabanı şemaları
+│   └── fire_protection_db.sql
+├── includes/                 # İçerik dosyaları
+│   ├── header.php
+│   ├── footer.php
+│   ├── navigation.php
+│   └── functions.php
+├── pages/                    # Sayfa dosyaları
+│   ├── iletisim.php
+│   └── hizmetler.php
+├── uploads/                  # Yüklenen dosyalar
+├── logs/                     # Sistem günlükleri
+├── index.php                 # Ana giriş dosyası
+├── sitemap.php               # XML Sitemap
+├── robots.txt                # Robots dosyası
+└── README.md                 # Bu dosya
